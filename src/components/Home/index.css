@@ -53,11 +53,11 @@
 }
 
 .home-heading {
-  color: #1e293b;
   font-family: 'Roboto';
   font-weight: bold;
-  font-size: 30px;
-  line-height: 1.2;
+  margin-top: 0px;
+  font-size: 36px;
+  color: #1e293b;
   text-align: center;
 }
 
@@ -74,14 +74,14 @@
   font-size: 14px;
   line-height: 28px;
   color: #64748b;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .home-description {
     font-size: 18px;
-    margin-top: 0px;
+    margin-top: 0;
     text-align: left;
   }
 }

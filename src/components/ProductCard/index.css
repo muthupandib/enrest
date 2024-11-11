@@ -1,5 +1,6 @@
 .product-item {
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 48px;
   width: 350px;
   flex-grow: 0;
@@ -11,12 +12,6 @@
   .product-item {
     width: 300px;
   }
-}
-
-.link-item {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
 }
 
 .thumbnail {
@@ -53,7 +48,7 @@
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: 700;
-  margin: 0px;
+  margin: 0;
 }
 
 .rating-container {

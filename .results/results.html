@@ -9,13 +9,13 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
             <script src="js/view.js"></script>
         </head><body><div id="test-results">{
-  &quot;numFailedTestSuites&quot;: 7,
-  &quot;numFailedTests&quot;: 107,
-  &quot;numPassedTestSuites&quot;: 0,
-  &quot;numPassedTests&quot;: 0,
+  &quot;numFailedTestSuites&quot;: 5,
+  &quot;numFailedTests&quot;: 86,
+  &quot;numPassedTestSuites&quot;: 2,
+  &quot;numPassedTests&quot;: 21,
   &quot;numPendingTestSuites&quot;: 0,
   &quot;numPendingTests&quot;: 0,
-  &quot;numRuntimeErrorTestSuites&quot;: 7,
+  &quot;numRuntimeErrorTestSuites&quot;: 2,
   &quot;numTodoTests&quot;: 0,
   &quot;numTotalTestSuites&quot;: 7,
   &quot;numTotalTests&quot;: 107,
@@ -36,7 +36,7 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1727603018875,
+  &quot;startTime&quot;: 1731324504554,
   &quot;success&quot;: false,
   &quot;testResults&quot;: [
     {
@@ -67,13 +67,13 @@
         &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
         &quot;hint&quot;: &quot;&quot;,
         &quot;requireStack&quot;: [
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/6cart.js&quot;
+          &quot;/tmp/RJSCPXK9WC/src/__tests__/6cart.js&quot;
         ],
         &quot;siblingWithSimilarExtensionFound&quot;: false,
         &quot;moduleName&quot;: &quot;../context/CartContext&quot;,
         &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../context/CartContext&#x27; from &#x27;src/__tests__/6cart.js&#x27;&quot;
       },
-      &quot;testFilePath&quot;: &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/6cart.js&quot;,
+      &quot;testFilePath&quot;: &quot;/tmp/RJSCPXK9WC/src/__tests__/6cart.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [
@@ -1047,7 +1047,7 @@
       ]
     },
     {
-      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;\n\n    Require stack:\n      src/components/Header/index.js\n      src/components/Home/index.js\n      src/App.js\n      src/__tests__/2ProductDetails.js\n\n      2 | import Cookies from &#x27;js-cookie&#x27;\n      3 |\n    &gt; 4 | import CartContext from &#x27;../../context/CartContext&#x27;\n        | ^\n      5 |\n      6 | import &#x27;./index.css&#x27;\n      7 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/components/Header/index.js:4:1)\n&quot;,
+      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    ENOENT: no such file or directory, open &#x27;/tmp/RJSCPXK9WC/src/components/ProductItemDetails/index.js&#x27;\n\n      10 | import App from &#x27;../App&#x27;\n      11 |\n    &gt; 12 | const jsxCode = fs.readFileSync(\n         |                    ^\n      13 |   path.resolve(__dirname, &#x27;../components/ProductItemDetails/index.js&#x27;),\n      14 |   &#x27;utf8&#x27;,\n      15 | )\n\n      at Object.&lt;anonymous&gt; (src/__tests__/2ProductDetails.js:12:20)\n&quot;,
       &quot;leaks&quot;: false,
       &quot;numFailingTests&quot;: 26,
       &quot;numPassingTests&quot;: 0,
@@ -1071,19 +1071,12 @@
         &quot;updated&quot;: 0
       },
       &quot;testExecError&quot;: {
-        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
-        &quot;hint&quot;: &quot;&quot;,
-        &quot;requireStack&quot;: [
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Header/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Home/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/App.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/2ProductDetails.js&quot;
-        ],
-        &quot;siblingWithSimilarExtensionFound&quot;: false,
-        &quot;moduleName&quot;: &quot;../../context/CartContext&quot;,
-        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;&quot;
+        &quot;errno&quot;: -2,
+        &quot;syscall&quot;: &quot;open&quot;,
+        &quot;code&quot;: &quot;ENOENT&quot;,
+        &quot;path&quot;: &quot;/tmp/RJSCPXK9WC/src/components/ProductItemDetails/index.js&quot;
       },
-      &quot;testFilePath&quot;: &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/2ProductDetails.js&quot;,
+      &quot;testFilePath&quot;: &quot;/tmp/RJSCPXK9WC/src/__tests__/2ProductDetails.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [
@@ -1582,18 +1575,17 @@
       ]
     },
     {
-      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;\n\n    Require stack:\n      src/components/Header/index.js\n      src/components/Home/index.js\n      src/App.js\n      src/__tests__/5Products.js\n\n      2 | import Cookies from &#x27;js-cookie&#x27;\n      3 |\n    &gt; 4 | import CartContext from &#x27;../../context/CartContext&#x27;\n        | ^\n      5 |\n      6 | import &#x27;./index.css&#x27;\n      7 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/components/Header/index.js:4:1)\n&quot;,
       &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 15,
-      &quot;numPassingTests&quot;: 0,
+      &quot;numFailingTests&quot;: 3,
+      &quot;numPassingTests&quot;: 12,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 0,
-        &quot;runtime&quot;: 0,
-        &quot;slow&quot;: false,
-        &quot;start&quot;: 0
+        &quot;end&quot;: 1731324532944,
+        &quot;runtime&quot;: 14859,
+        &quot;slow&quot;: true,
+        &quot;start&quot;: 1731324518085
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -1605,310 +1597,280 @@
         &quot;unmatched&quot;: 0,
         &quot;updated&quot;: 0
       },
-      &quot;testExecError&quot;: {
-        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
-        &quot;hint&quot;: &quot;&quot;,
-        &quot;requireStack&quot;: [
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Header/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Home/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/App.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/5Products.js&quot;
-        ],
-        &quot;siblingWithSimilarExtensionFound&quot;: false,
-        &quot;moduleName&quot;: &quot;../../context/CartContext&quot;,
-        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;&quot;
-      },
-      &quot;testFilePath&quot;: &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/5Products.js&quot;,
+      &quot;testFilePath&quot;: &quot;/tmp/RJSCPXK9WC/src/__tests__/5Products.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests When the \&quot;/products\&quot; is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt as \&quot;website login\&quot;&quot;,
+          &quot;duration&quot;: 512,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsWhen the \&quot;/products\&quot; is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt as \&quot;website login\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When the \&quot;/products\&quot; is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt as \&quot;website login\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_41&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_41&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests Products Route should consist of HTML input element with type attribute value as \&quot;search\&quot;&quot;,
+          &quot;duration&quot;: 709,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsProducts Route should consist of HTML input element with type attribute value as \&quot;search\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;Products Route should consist of HTML input element with type attribute value as \&quot;search\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_42&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_42&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests Products Route should consist of HTML paragraph elements with text content equal to the \&quot;name\&quot; value of each item in categoryOptions provided&quot;,
+          &quot;duration&quot;: 403,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsProducts Route should consist of HTML paragraph elements with text content equal to the \&quot;name\&quot; value of each item in categoryOptions provided&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;Products Route should consist of HTML paragraph elements with text content equal to the \&quot;name\&quot; value of each item in categoryOptions provided&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_43&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_43&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests Products Route should consist of HTML image elements with alt value equal to \&quot;rating {ratingId}\&quot; and src value equal to \&quot;imageUrl\&quot; value of each item in ratingsList provided&quot;,
+          &quot;duration&quot;: 4197,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsProducts Route should consist of HTML image elements with alt value equal to \&quot;rating {ratingId}\&quot; and src value equal to \&quot;imageUrl\&quot; value of each item in ratingsList provided&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;Products Route should consist of HTML image elements with alt value equal to \&quot;rating {ratingId}\&quot; and src value equal to \&quot;imageUrl\&quot; value of each item in ratingsList provided&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_44&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_44&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests Products Route should consist of HTML button element with text content as \&quot;Clear Filters\&quot;&quot;,
+          &quot;duration&quot;: 394,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsProducts Route should consist of HTML button element with text content as \&quot;Clear Filters\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;Products Route should consist of HTML button element with text content as \&quot;Clear Filters\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_45&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_45&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests When Products Route is opened, an HTTP GET request should be made to productsApiUrl with all the query parameters and their initial values&quot;,
+          &quot;duration&quot;: 296,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsWhen Products Route is opened, an HTTP GET request should be made to productsApiUrl with all the query parameters and their initial values&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When Products Route is opened, an HTTP GET request should be made to productsApiUrl with all the query parameters and their initial values&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_46&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_46&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests When the Products Route is opened, then the products received in the HTTP GET request response should be displayed&quot;,
+          &quot;duration&quot;: 324,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsWhen the Products Route is opened, then the products received in the HTTP GET request response should be displayed&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When the Products Route is opened, then the products received in the HTTP GET request response should be displayed&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_47&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_47&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests When a value is provided in the HTML input element for search and the Enter key is pressed, an HTTP GET request should be made with the value provided in the HTML input element as the value to query parameter \&quot;title_search\&quot;&quot;,
+          &quot;duration&quot;: 1076,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsWhen a value is provided in the HTML input element for search and the Enter key is pressed, an HTTP GET request should be made with the value provided in the HTML input element as the value to query parameter \&quot;title_search\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When a value is provided in the HTML input element for search and the Enter key is pressed, an HTTP GET request should be made with the value provided in the HTML input element as the value to query parameter \&quot;title_search\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_48&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_48&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests When a category is clicked, an HTTP GET request should be made with the id of the category as the value to query parameter \&quot;category\&quot;&quot;,
+          &quot;duration&quot;: 297,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsWhen a category is clicked, an HTTP GET request should be made with the id of the category as the value to query parameter \&quot;category\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When a category is clicked, an HTTP GET request should be made with the id of the category as the value to query parameter \&quot;category\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_49&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_49&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests When a rating is clicked, an HTTP GET request should be made with the id of the rating as the value to query parameter \&quot;rating\&quot;&quot;,
+          &quot;duration&quot;: 902,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsWhen a rating is clicked, an HTTP GET request should be made with the id of the rating as the value to query parameter \&quot;rating\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When a rating is clicked, an HTTP GET request should be made with the id of the rating as the value to query parameter \&quot;rating\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_50&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_50&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests When all the filters in Products Route are applied and the \&quot;Clear Filters\&quot; button is clicked, then an HTTP GET request should be made to productsApiUrl with initial values of the query parameters&quot;,
+          &quot;duration&quot;: 815,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsWhen all the filters in Products Route are applied and the \&quot;Clear Filters\&quot; button is clicked, then an HTTP GET request should be made to productsApiUrl with initial values of the query parameters&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When all the filters in Products Route are applied and the \&quot;Clear Filters\&quot; button is clicked, then an HTTP GET request should be made to productsApiUrl with initial values of the query parameters&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_51&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_51&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
+          &quot;duration&quot;: 379,
           &quot;failureDetails&quot;: [
-            &quot;&quot;
+            {
+              &quot;matcherResult&quot;: {
+                &quot;pass&quot;: false
+              }
+            }
           ],
           &quot;failureMessages&quot;: [
-            &quot;&quot;
+            &quot;Error: expect(received).toBeGreaterThanOrEqual(expected)\n\nExpected: &gt;= 13\nReceived:    8\n    at Object.&lt;anonymous&gt; (/tmp/RJSCPXK9WC/src/__tests__/5Products.js:640:48)\n    at _callCircusTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:212:5)\n    at _runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:149:3)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:63:9)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:57:9)\n    at run (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:25:3)\n    at runAndTransformResultsToJestFormat (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)\n    at jestAdapter (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)\n    at runTestInternal (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:380:16)\n    at runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:472:34)&quot;
           ],
-          &quot;fullName&quot;: &quot;Products Route tests Each product card should be wrapped with the Link from react-router-dom&quot;,
+          &quot;fullName&quot;: &quot;Products Route testsEach product card should be wrapped with the Link from react-router-dom&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;Each product card should be wrapped with the Link from react-router-dom&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_52&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_52&quot;,
+          &quot;errorMessages&quot;: [
+            &quot;Expected \&quot;undefined\&quot;, but received \&quot;undefined\&quot;&quot;
+          ]
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
+          &quot;duration&quot;: 1410,
           &quot;failureDetails&quot;: [
-            &quot;&quot;
+            {
+              &quot;name&quot;: &quot;TestingLibraryElementError&quot;
+            }
           ],
           &quot;failureMessages&quot;: [
-            &quot;&quot;
+            &quot;Error: Unable to find role=\&quot;img\&quot;\n\n\u001b[36m&lt;body&gt;\u001b[39m\n  \u001b[36m&lt;div&gt;\u001b[39m\n    \u001b[36m&lt;nav\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-header\&quot;\u001b[39m\n    \u001b[36m&gt;\u001b[39m\n      \u001b[36m&lt;div\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-content\&quot;\u001b[39m\n      \u001b[36m&gt;\u001b[39m\n        \u001b[36m&lt;div\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-mobile-logo-container\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;a\u001b[39m\n            \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;img\u001b[39m\n              \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n              \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n            \u001b[36m/&gt;\u001b[39m\n          \u001b[36m&lt;/a&gt;\u001b[39m\n          \u001b[36m&lt;button\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-mobile-btn\&quot;\u001b[39m\n            \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;img\u001b[39m\n              \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav logout\&quot;\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n              \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png\&quot;\u001b[39m\n            \u001b[36m/&gt;\u001b[39m\n          \u001b[36m&lt;/button&gt;\u001b[39m\n        \u001b[36m&lt;/div&gt;\u001b[39m\n        \u001b[36m&lt;div\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-large-container\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;a\u001b[39m\n            \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;img\u001b[39m\n              \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n              \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n            \u001b[36m/&gt;\u001b[39m\n          \u001b[36m&lt;/a&gt;\u001b[39m\n          \u001b[36m&lt;ul\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;a\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mHome\u001b[0m\n              \u001b[36m&lt;/a&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;a\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mProducts\u001b[0m\n              \u001b[36m&lt;/a&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;a\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mCart\u001b[0m\n              \u001b[36m&lt;/a&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n          \u001b[36m&lt;/ul&gt;\u001b[39m\n          \u001b[36m&lt;button\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;logout-desktop-btn\&quot;\u001b[39m\n            \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[0mLogout\u001b[0m\n          \u001b[36m&lt;/button&gt;\u001b[39m\n        \u001b[36m&lt;/div&gt;\u001b[39m\n      \u001b[36m&lt;/div&gt;\u001b[39m\n      \u001b[36m&lt;div\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-mobile\&quot;\u001b[39m\n      \u001b[36m&gt;\u001b[39m\n        \u001b[36m&lt;ul\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-list-mobile\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;li\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;a\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n              \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;img\u001b[39m\n                \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav home\&quot;\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;/a&gt;\u001b[39m\n          \u001b[36m&lt;/li&gt;\u001b[39m\n          \u001b[36m&lt;li\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;a\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n              \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;img\u001b[39m\n                \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav products\&quot;\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;/a&gt;\u001b[39m\n          \u001b[36m&lt;/li&gt;\u001b[39m\n          \u001b[36m&lt;li\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;a\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n              \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;img\u001b[39m\n                \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav cart\&quot;\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;/a&gt;\u001b[39m\n          \u001b[36m&lt;/li&gt;\u001b[39m\n        \u001b[36m&lt;/ul&gt;\u001b[39m\n      \u001b[36m&lt;/div&gt;\u001b[39m\n    \u001b[36m&lt;/nav&gt;\u001b[39m\n    \u001b[36m&lt;div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;product-sections\&quot;\u001b[39m\n    \u001b[36m&gt;\u001b[39m\n      \u001b[36m&lt;div\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;primedeals-loader-container\&quot;\u001b[39m\n      \u001b[36m&gt;\u001b[39m\n        \u001b[36m&lt;div\u001b[39m\n          \u001b[33maria-busy\u001b[39m=\u001b[32m\&quot;true\&quot;\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;svg\u001b[39m\n            \u001b[33maria-label\u001b[39m=\u001b[32m\&quot;audio-loading\&quot;\u001b[39m\n            \u001b[33mfill\u001b[39m=\u001b[32m\&quot;#0b69ff\&quot;\u001b[39m\n            \u001b[33mheight\u001b[39m=\u001b[32m\&quot;50\&quot;\u001b[39m\n            \u001b[33mviewBox\u001b[39m=\u001b[32m\&quot;0 0 120 30\&quot;\u001b[39m\n            \u001b[33mwidth\u001b[39m=\u001b[32m\&quot;50\&quot;\u001b[39m\n            \u001b[33mxmlns\u001b[39m=\u001b[32m\&quot;http://www.w3.org/2000/svg\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;circle\u001b[39m\n              \u001b[33mcx\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n              \u001b[33mcy\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n              \u001b[33mr\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;animate\u001b[39m\n                \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;r\&quot;\u001b[39m\n                \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                \u001b[33mto\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;15;9;15\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;animate\u001b[39m\n                \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;fillOpacity\&quot;\u001b[39m\n                \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;1\&quot;\u001b[39m\n                \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                \u001b[33mto\u001b[39m=\u001b[32m\&quot;1\&quot;\u001b[39m\n                \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;1;.5;1\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;/circle&gt;\u001b[39m\n            \u001b[36m&lt;circle\u001b[39m\n              \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;fillOpacity\&quot;\u001b[39m\n              \u001b[33mcx\u001b[39m=\u001b[32m\&quot;60\&quot;\u001b[39m\n              \u001b[33mcy\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n              \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;1\&quot;\u001b[39m\n              \u001b[33mr\u001b[39m=\u001b[32m\&quot;9\&quot;\u001b[39m\n              \u001b[33mto\u001b[39m=\u001b[32m\&quot;0.3\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;animate\u001b[39m\n                \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;r\&quot;\u001b[39m\n                \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;9\&quot;\u001b[39m\n                \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                \u001b[33mto\u001b[39m=\u001b[32m\&quot;9\&quot;\u001b[39m\n                \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;9;15;9\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;animate\u001b[39m\n                \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;fillOpacity\&quot;\u001b[39m\n                \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;0.5\&quot;\u001b[39m\n                \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                \u001b[33mto\u001b[39m=\u001b[32m\&quot;0.5\&quot;\u001b[39m\n                \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;.5;1;.5\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;/circle&gt;\u001b[39m\n            \u001b[36m&lt;circle\u001b[39m\n              \u001b[33mcx\u001b[39m=\u001b[32m\&quot;105\&quot;\u001b[39m\n              \u001b[33mcy\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n              \u001b[33mr\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;animate\u001b[39m\n                \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;r\&quot;\u001b[39m\n                \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                \u001b[33mto\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;15;9;15\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;animate\u001b[39m\n                \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;fillOpacity\&quot;\u001b[39m\n                \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;1\&quot;\u001b[39m\n                \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                \u001b[33mto\u001b[39m=\u001b[32m\&quot;1\&quot;\u001b[39m\n                \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;1;.5;1\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;/circle&gt;\u001b[39m\n          \u001b[36m&lt;/svg&gt;\u001b[39m\n        \u001b[36m&lt;/div&gt;\u001b[39m\n      \u001b[36m&lt;/div&gt;\u001b[39m\n      \u001b[36m&lt;div\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;all-products-section\&quot;\u001b[39m\n      \u001b[36m&gt;\u001b[39m\n        \u001b[36m&lt;div\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;filters-group-container\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;search-input-container\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;input\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;search-input\&quot;\u001b[39m\n              \u001b[33mplaceholder\u001b[39m=\u001b[32m\&quot;Search\&quot;\u001b[39m\n              \u001b[33mtype\u001b[39m=\u001b[32m\&quot;search\&quot;\u001b[39m\n              \u001b[33mvalue\u001b[39m=\u001b[32m\&quot;\&quot;\u001b[39m\n            \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;svg\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;search-icon\&quot;\u001b[39m\n              \u001b[33mfill\u001b[39m=\u001b[32m\&quot;currentColor\&quot;\u001b[39m\n              \u001b[33mheight\u001b[39m=\u001b[32m\&quot;1em\&quot;\u001b[39m\n              \u001b[33mstroke\u001b[39m=\u001b[32m\&quot;currentColor\&quot;\u001b[39m\n              \u001b[33mstroke-width\u001b[39m=\u001b[32m\&quot;0\&quot;\u001b[39m\n              \u001b[33mviewBox\u001b[39m=\u001b[32m\&quot;0 0 16 16\&quot;\u001b[39m\n              \u001b[33mwidth\u001b[39m=\u001b[32m\&quot;1em\&quot;\u001b[39m\n              \u001b[33mxmlns\u001b[39m=\u001b[32m\&quot;http://www.w3.org/2000/svg\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;path\u001b[39m\n                \u001b[33mclip-rule\u001b[39m=\u001b[32m\&quot;evenodd\&quot;\u001b[39m\n                \u001b[33md\u001b[39m=\u001b[32m\&quot;M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z\&quot;\u001b[39m\n                \u001b[33mfill-rule\u001b[39m=\u001b[32m\&quot;evenodd\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;path\u001b[39m\n                \u001b[33mclip-rule\u001b[39m=\u001b[32m\&quot;evenodd\&quot;\u001b[39m\n                \u001b[33md\u001b[39m=\u001b[32m\&quot;M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z\&quot;\u001b[39m\n                \u001b[33mfill-rule\u001b[39m=\u001b[32m\&quot;evenodd\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;/svg&gt;\u001b[39m\n          \u001b[36m&lt;/div&gt;\u001b[39m\n          \u001b[36m&lt;h1\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-heading\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[0mCategory\u001b[0m\n          \u001b[36m&lt;/h1&gt;\u001b[39m\n          \u001b[36m&lt;ul\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;categories-list\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;p\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-name\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mClothing\u001b[0m\n              \u001b[36m&lt;/p&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;p\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-name\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mElectronics\u001b[0m\n              \u001b[36m&lt;/p&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;p\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-name\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mAppliances\u001b[0m\n              \u001b[36m&lt;/p&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;p\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-name\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mGrocery\u001b[0m\n              \u001b[36m&lt;/p&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;p\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-name\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mToys\u001b[0m\n              \u001b[36m&lt;/p&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n          \u001b[36m&lt;/ul&gt;\u001b[39m\n          \u001b[36m&lt;div&gt;\u001b[39m\n            \u001b[36m&lt;h1\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-heading\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[0mRating\u001b[0m\n            \u001b[36m&lt;/h1&gt;\u001b[39m\n            \u001b[36m&lt;ul\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;ratings-list\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;li\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-item\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;img\u001b[39m\n                  \u001b[33malt\u001b[39m=\u001b[32m\&quot;rating 4\&quot;\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-img\&quot;\u001b[39m\n                  \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/rating-four-stars-img.png\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;p\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;and-up\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[0m&amp; up\u001b[0m\n                \u001b[36m&lt;/p&gt;\u001b[39m\n              \u001b[36m&lt;/li&gt;\u001b[39m\n              \u001b[36m&lt;li\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-item\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;img\u001b[39m\n                  \u001b[33malt\u001b[39m=\u001b[32m\&quot;rating 3\&quot;\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-img\&quot;\u001b[39m\n                  \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/rating-three-stars-img.png\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;p\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;and-up\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[0m&amp; up\u001b[0m\n                \u001b[36m&lt;/p&gt;\u001b[39m\n              \u001b[36m&lt;/li&gt;\u001b[39m\n              \u001b[36m&lt;li\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-item\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;img\u001b[39m\n                  \u001b[33malt\u001b[39m=\u001b[32m\&quot;rating 2\&quot;\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-img\&quot;\u001b[39m\n                  \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/rating-two-stars-img.png\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;p\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;and-up\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[0m&amp; up\u001b[0m\n                \u001b[36m&lt;/p&gt;\u001b[39m\n              \u001b[36m&lt;/li&gt;\u001b[39m\n              \u001b[36m&lt;li\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-item\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;img\u001b[39m\n                  \u001b[33malt\u001b[39m=\u001b[32m\&quot;rating 1\&quot;\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-img\&quot;\u001b[39m\n                  \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/rating-one-star-img.png\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;p\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;and-up\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[0m&amp; up\u001b[0m\n                \u001b[36m&lt;/p&gt;\u001b[39m\n              \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;/ul&gt;\u001b[39m\n          \u001b[36m&lt;/div&gt;\u001b[39m\n          \u001b[36m&lt;button\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;clear-filters-btn\&quot;\u001b[39m\n            \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[0mClear Filters\u001b[0m\n          \u001b[36m&lt;/button&gt;\u001b[39m\n        \u001b[36m&lt;/div&gt;\u001b[39m\n        \u001b[36m&lt;div\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;products-error-view-container\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;img\u001b[39m\n            \u001b[33malt\u001b[39m=\u001b[32m\&quot;products failure\&quot;\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;products-failure-img\&quot;\u001b[39m\n            \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz/nxt-trendz-products-error-view.png\&quot;\u001b[39m\n          \u001b[36m/&gt;\u001b[39m\n          \u001b[36m&lt;h1\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;product-failure-heading-text\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[0mOops! Something Went Wrong\u001b[0m\n          \u001b[36m&lt;/h1&gt;\u001b[39m\n          \u001b[36m&lt;p\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;products-failure-description\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[0mWe are having some trouble processing your request. Please try again.\u001b[0m\n          \u001b[36m&lt;/p&gt;\u001b[39m\n        \u001b[36m&lt;/div&gt;\u001b[39m\n      \u001b[36m&lt;/div&gt;\u001b[39m\n    \u001b[36m&lt;/div&gt;\u001b[39m\n  \u001b[36m&lt;/div&gt;\u001b[39m\n\u001b[36m&lt;/body&gt;\u001b[39m\n    at waitForWrapper (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/wait-for.js:173:27)\n    at findByRole (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)\n    at Object.&lt;anonymous&gt; (/tmp/RJSCPXK9WC/src/__tests__/5Products.js:655:20)\n    at Promise.then.completed (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:276:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:216:10)\n    at _callCircusTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:212:40)\n    at _runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:149:3)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:63:9)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:57:9)\n    at run (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:25:3)\n    at runAndTransformResultsToJestFormat (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)\n    at jestAdapter (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)\n    at runTestInternal (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:380:16)\n    at runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:472:34)&quot;
           ],
-          &quot;fullName&quot;: &quot;Products Route tests When the HTTP GET request made is unsuccessful, then failure view should be displayed&quot;,
+          &quot;fullName&quot;: &quot;Products Route testsWhen the HTTP GET request made is unsuccessful, then failure view should be displayed&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;When the HTTP GET request made is unsuccessful, then failure view should be displayed&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_53&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_53&quot;,
+          &quot;errorMessages&quot;: [
+            &quot;Error: Unable to find role=\&quot;img\&quot;&quot;
+          ]
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Products Route tests When the HTTP GET request made to productsApiUrl returns products list as empty, then no products view should be displayed&quot;,
+          &quot;duration&quot;: 497,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Products Route testsWhen the HTTP GET request made to productsApiUrl returns products list as empty, then no products view should be displayed&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When the HTTP GET request made to productsApiUrl returns products list as empty, then no products view should be displayed&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_54&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_54&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Products Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
+          &quot;duration&quot;: 183,
           &quot;failureDetails&quot;: [
-            &quot;&quot;
+            {
+              &quot;matcherResult&quot;: {
+                &quot;pass&quot;: false
+              }
+            }
           ],
           &quot;failureMessages&quot;: [
-            &quot;&quot;
+            &quot;Error: expect(received).toMatch(expected)\n\nExpected substring: \&quot;products/24\&quot;\nReceived string:    \&quot;/products\&quot;\n    at Object.&lt;anonymous&gt; (/tmp/RJSCPXK9WC/src/__tests__/5Products.js:713:38)\n    at _callCircusTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:212:5)\n    at _runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:149:3)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:63:9)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:57:9)\n    at run (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:25:3)\n    at runAndTransformResultsToJestFormat (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)\n    at jestAdapter (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)\n    at runTestInternal (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:380:16)\n    at runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:472:34)&quot;
           ],
-          &quot;fullName&quot;: &quot;Products Route tests When a Product card is clicked in Products Route, then the page should be navigated to the Product Item Details route with \&quot;/product-details/:id\&quot; in the URL path&quot;,
+          &quot;fullName&quot;: &quot;Products Route testsWhen a Product card is clicked in Products Route, then the page should be navigated to the Product Item Details route with \&quot;/product-details/:id\&quot; in the URL path&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;When a Product card is clicked in Products Route, then the page should be navigated to the Product Item Details route with \&quot;/product-details/:id\&quot; in the URL path&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_55&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_55&quot;,
+          &quot;errorMessages&quot;: [
+            &quot;Expected \&quot;undefined\&quot;, but received \&quot;undefined\&quot;&quot;
+          ]
         }
-      ]
+      ],
+      &quot;failureMessage&quot;: &quot;  ● :::RJSCPHEHQV_TEST_SUITE_5:::Products Route tests › :::RJSCPHEHQV_TEST_52:::Each product card should be wrapped with the Link from react-router-dom:::5:::\n\n    expect(received).toBeGreaterThanOrEqual(expected)\n\n    Expected: &gt;= 13\n    Received:    8\n\n      638 |     ).toBeInTheDocument()\n      639 |\n    &gt; 640 |     expect(screen.getAllByRole(&#x27;link&#x27;).length).toBeGreaterThanOrEqual(13)\n          |                                                ^\n      641 |     restoreGetCookieFns()\n      642 |   })\n      643 |\n\n      at Object.&lt;anonymous&gt; (src/__tests__/5Products.js:640:48)\n\n  ● :::RJSCPHEHQV_TEST_SUITE_5:::Products Route tests › :::RJSCPHEHQV_TEST_53:::When the HTTP GET request made is unsuccessful, then failure view should be displayed:::5:::\n\n    Unable to find role=\&quot;img\&quot;\n\n    \u001b[36m&lt;body&gt;\u001b[39m\n      \u001b[36m&lt;div&gt;\u001b[39m\n        \u001b[36m&lt;nav\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-header\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-content\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-mobile-logo-container\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;a\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;img\u001b[39m\n                  \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n                  \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;/a&gt;\u001b[39m\n              \u001b[36m&lt;button\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-mobile-btn\&quot;\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;img\u001b[39m\n                  \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav logout\&quot;\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                  \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;/button&gt;\u001b[39m\n            \u001b[36m&lt;/div&gt;\u001b[39m\n            \u001b[36m&lt;div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-large-container\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;a\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;img\u001b[39m\n                  \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n                  \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;/a&gt;\u001b[39m\n              \u001b[36m&lt;ul\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;a\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mHome\u001b[0m\n                  \u001b[36m&lt;/a&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;a\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mProducts\u001b[0m\n                  \u001b[36m&lt;/a&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;a\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mCart\u001b[0m\n                  \u001b[36m&lt;/a&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n              \u001b[36m&lt;/ul&gt;\u001b[39m\n              \u001b[36m&lt;button\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;logout-desktop-btn\&quot;\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mLogout\u001b[0m\n              \u001b[36m&lt;/button&gt;\u001b[39m\n            \u001b[36m&lt;/div&gt;\u001b[39m\n          \u001b[36m&lt;/div&gt;\u001b[39m\n          \u001b[36m&lt;div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-mobile\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;ul\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-list-mobile\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;li\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;a\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                  \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;img\u001b[39m\n                    \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav home\&quot;\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;/a&gt;\u001b[39m\n              \u001b[36m&lt;/li&gt;\u001b[39m\n              \u001b[36m&lt;li\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;a\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                  \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;img\u001b[39m\n                    \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav products\&quot;\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;/a&gt;\u001b[39m\n              \u001b[36m&lt;/li&gt;\u001b[39m\n              \u001b[36m&lt;li\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;a\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                  \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;img\u001b[39m\n                    \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav cart\&quot;\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;/a&gt;\u001b[39m\n              \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;/ul&gt;\u001b[39m\n          \u001b[36m&lt;/div&gt;\u001b[39m\n        \u001b[36m&lt;/nav&gt;\u001b[39m\n        \u001b[36m&lt;div\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;product-sections\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;primedeals-loader-container\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;div\u001b[39m\n              \u001b[33maria-busy\u001b[39m=\u001b[32m\&quot;true\&quot;\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;svg\u001b[39m\n                \u001b[33maria-label\u001b[39m=\u001b[32m\&quot;audio-loading\&quot;\u001b[39m\n                \u001b[33mfill\u001b[39m=\u001b[32m\&quot;#0b69ff\&quot;\u001b[39m\n                \u001b[33mheight\u001b[39m=\u001b[32m\&quot;50\&quot;\u001b[39m\n                \u001b[33mviewBox\u001b[39m=\u001b[32m\&quot;0 0 120 30\&quot;\u001b[39m\n                \u001b[33mwidth\u001b[39m=\u001b[32m\&quot;50\&quot;\u001b[39m\n                \u001b[33mxmlns\u001b[39m=\u001b[32m\&quot;http://www.w3.org/2000/svg\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;circle\u001b[39m\n                  \u001b[33mcx\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                  \u001b[33mcy\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                  \u001b[33mr\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;animate\u001b[39m\n                    \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;r\&quot;\u001b[39m\n                    \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                    \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                    \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                    \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                    \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                    \u001b[33mto\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                    \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;15;9;15\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                  \u001b[36m&lt;animate\u001b[39m\n                    \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;fillOpacity\&quot;\u001b[39m\n                    \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                    \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                    \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                    \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;1\&quot;\u001b[39m\n                    \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                    \u001b[33mto\u001b[39m=\u001b[32m\&quot;1\&quot;\u001b[39m\n                    \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;1;.5;1\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;/circle&gt;\u001b[39m\n                \u001b[36m&lt;circle\u001b[39m\n                  \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;fillOpacity\&quot;\u001b[39m\n                  \u001b[33mcx\u001b[39m=\u001b[32m\&quot;60\&quot;\u001b[39m\n                  \u001b[33mcy\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                  \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;1\&quot;\u001b[39m\n                  \u001b[33mr\u001b[39m=\u001b[32m\&quot;9\&quot;\u001b[39m\n                  \u001b[33mto\u001b[39m=\u001b[32m\&quot;0.3\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;animate\u001b[39m\n                    \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;r\&quot;\u001b[39m\n                    \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                    \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                    \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                    \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;9\&quot;\u001b[39m\n                    \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                    \u001b[33mto\u001b[39m=\u001b[32m\&quot;9\&quot;\u001b[39m\n                    \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;9;15;9\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                  \u001b[36m&lt;animate\u001b[39m\n                    \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;fillOpacity\&quot;\u001b[39m\n                    \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                    \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                    \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                    \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;0.5\&quot;\u001b[39m\n                    \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                    \u001b[33mto\u001b[39m=\u001b[32m\&quot;0.5\&quot;\u001b[39m\n                    \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;.5;1;.5\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;/circle&gt;\u001b[39m\n                \u001b[36m&lt;circle\u001b[39m\n                  \u001b[33mcx\u001b[39m=\u001b[32m\&quot;105\&quot;\u001b[39m\n                  \u001b[33mcy\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                  \u001b[33mr\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;animate\u001b[39m\n                    \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;r\&quot;\u001b[39m\n                    \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                    \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                    \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                    \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                    \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                    \u001b[33mto\u001b[39m=\u001b[32m\&quot;15\&quot;\u001b[39m\n                    \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;15;9;15\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                  \u001b[36m&lt;animate\u001b[39m\n                    \u001b[33mattributeName\u001b[39m=\u001b[32m\&quot;fillOpacity\&quot;\u001b[39m\n                    \u001b[33mbegin\u001b[39m=\u001b[32m\&quot;0s\&quot;\u001b[39m\n                    \u001b[33mcalcMode\u001b[39m=\u001b[32m\&quot;linear\&quot;\u001b[39m\n                    \u001b[33mdur\u001b[39m=\u001b[32m\&quot;0.8s\&quot;\u001b[39m\n                    \u001b[33mfrom\u001b[39m=\u001b[32m\&quot;1\&quot;\u001b[39m\n                    \u001b[33mrepeatCount\u001b[39m=\u001b[32m\&quot;indefinite\&quot;\u001b[39m\n                    \u001b[33mto\u001b[39m=\u001b[32m\&quot;1\&quot;\u001b[39m\n                    \u001b[33mvalues\u001b[39m=\u001b[32m\&quot;1;.5;1\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;/circle&gt;\u001b[39m\n              \u001b[36m&lt;/svg&gt;\u001b[39m\n            \u001b[36m&lt;/div&gt;\u001b[39m\n          \u001b[36m&lt;/div&gt;\u001b[39m\n          \u001b[36m&lt;div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;all-products-section\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;filters-group-container\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;div\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;search-input-container\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;input\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;search-input\&quot;\u001b[39m\n                  \u001b[33mplaceholder\u001b[39m=\u001b[32m\&quot;Search\&quot;\u001b[39m\n                  \u001b[33mtype\u001b[39m=\u001b[32m\&quot;search\&quot;\u001b[39m\n                  \u001b[33mvalue\u001b[39m=\u001b[32m\&quot;\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;svg\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;search-icon\&quot;\u001b[39m\n                  \u001b[33mfill\u001b[39m=\u001b[32m\&quot;currentColor\&quot;\u001b[39m\n                  \u001b[33mheight\u001b[39m=\u001b[32m\&quot;1em\&quot;\u001b[39m\n                  \u001b[33mstroke\u001b[39m=\u001b[32m\&quot;currentColor\&quot;\u001b[39m\n                  \u001b[33mstroke-width\u001b[39m=\u001b[32m\&quot;0\&quot;\u001b[39m\n                  \u001b[33mviewBox\u001b[39m=\u001b[32m\&quot;0 0 16 16\&quot;\u001b[39m\n                  \u001b[33mwidth\u001b[39m=\u001b[32m\&quot;1em\&quot;\u001b[39m\n                  \u001b[33mxmlns\u001b[39m=\u001b[32m\&quot;http://www.w3.org/2000/svg\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;path\u001b[39m\n                    \u001b[33mclip-rule\u001b[39m=\u001b[32m\&quot;evenodd\&quot;\u001b[39m\n                    \u001b[33md\u001b[39m=\u001b[32m\&quot;M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z\&quot;\u001b[39m\n                    \u001b[33mfill-rule\u001b[39m=\u001b[32m\&quot;evenodd\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                  \u001b[36m&lt;path\u001b[39m\n                    \u001b[33mclip-rule\u001b[39m=\u001b[32m\&quot;evenodd\&quot;\u001b[39m\n                    \u001b[33md\u001b[39m=\u001b[32m\&quot;M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z\&quot;\u001b[39m\n                    \u001b[33mfill-rule\u001b[39m=\u001b[32m\&quot;evenodd\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;/svg&gt;\u001b[39m\n              \u001b[36m&lt;/div&gt;\u001b[39m\n              \u001b[36m&lt;h1\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-heading\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mCategory\u001b[0m\n              \u001b[36m&lt;/h1&gt;\u001b[39m\n              \u001b[36m&lt;ul\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;categories-list\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;p\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-name\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mClothing\u001b[0m\n                  \u001b[36m&lt;/p&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;p\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-name\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mElectronics\u001b[0m\n                  \u001b[36m&lt;/p&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;p\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-name\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mAppliances\u001b[0m\n                  \u001b[36m&lt;/p&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;p\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-name\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mGrocery\u001b[0m\n                  \u001b[36m&lt;/p&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;p\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;category-name\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mToys\u001b[0m\n                  \u001b[36m&lt;/p&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n              \u001b[36m&lt;/ul&gt;\u001b[39m\n              \u001b[36m&lt;div&gt;\u001b[39m\n                \u001b[36m&lt;h1\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-heading\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[0mRating\u001b[0m\n                \u001b[36m&lt;/h1&gt;\u001b[39m\n                \u001b[36m&lt;ul\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;ratings-list\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;li\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-item\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[36m&lt;img\u001b[39m\n                      \u001b[33malt\u001b[39m=\u001b[32m\&quot;rating 4\&quot;\u001b[39m\n                      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-img\&quot;\u001b[39m\n                      \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/rating-four-stars-img.png\&quot;\u001b[39m\n                    \u001b[36m/&gt;\u001b[39m\n                    \u001b[36m&lt;p\u001b[39m\n                      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;and-up\&quot;\u001b[39m\n                    \u001b[36m&gt;\u001b[39m\n                      \u001b[0m&amp; up\u001b[0m\n                    \u001b[36m&lt;/p&gt;\u001b[39m\n                  \u001b[36m&lt;/li&gt;\u001b[39m\n                  \u001b[36m&lt;li\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-item\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[36m&lt;img\u001b[39m\n                      \u001b[33malt\u001b[39m=\u001b[32m\&quot;rating 3\&quot;\u001b[39m\n                      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-img\&quot;\u001b[39m\n                      \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/rating-three-stars-img.png\&quot;\u001b[39m\n                    \u001b[36m/&gt;\u001b[39m\n                    \u001b[36m&lt;p\u001b[39m\n                      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;and-up\&quot;\u001b[39m\n                    \u001b[36m&gt;\u001b[39m\n                      \u001b[0m&amp; up\u001b[0m\n                    \u001b[36m&lt;/p&gt;\u001b[39m\n                  \u001b[36m&lt;/li&gt;\u001b[39m\n                  \u001b[36m&lt;li\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-item\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[36m&lt;img\u001b[39m\n                      \u001b[33malt\u001b[39m=\u001b[32m\&quot;rating 2\&quot;\u001b[39m\n                      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-img\&quot;\u001b[39m\n                      \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/rating-two-stars-img.png\&quot;\u001b[39m\n                    \u001b[36m/&gt;\u001b[39m\n                    \u001b[36m&lt;p\u001b[39m\n                      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;and-up\&quot;\u001b[39m\n                    \u001b[36m&gt;\u001b[39m\n                      \u001b[0m&amp; up\u001b[0m\n                    \u001b[36m&lt;/p&gt;\u001b[39m\n                  \u001b[36m&lt;/li&gt;\u001b[39m\n                  \u001b[36m&lt;li\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-item\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[36m&lt;img\u001b[39m\n                      \u001b[33malt\u001b[39m=\u001b[32m\&quot;rating 1\&quot;\u001b[39m\n                      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;rating-img\&quot;\u001b[39m\n                      \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/rating-one-star-img.png\&quot;\u001b[39m\n                    \u001b[36m/&gt;\u001b[39m\n                    \u001b[36m&lt;p\u001b[39m\n                      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;and-up\&quot;\u001b[39m\n                    \u001b[36m&gt;\u001b[39m\n                      \u001b[0m&amp; up\u001b[0m\n                    \u001b[36m&lt;/p&gt;\u001b[39m\n                  \u001b[36m&lt;/li&gt;\u001b[39m\n                \u001b[36m&lt;/ul&gt;\u001b[39m\n              \u001b[36m&lt;/div&gt;\u001b[39m\n              \u001b[36m&lt;button\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;clear-filters-btn\&quot;\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mClear Filters\u001b[0m\n              \u001b[36m&lt;/button&gt;\u001b[39m\n            \u001b[36m&lt;/div&gt;\u001b[39m\n            \u001b[36m&lt;div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;products-error-view-container\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;img\u001b[39m\n                \u001b[33malt\u001b[39m=\u001b[32m\&quot;products failure\&quot;\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;products-failure-img\&quot;\u001b[39m\n                \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz/nxt-trendz-products-error-view.png\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;h1\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;product-failure-heading-text\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mOops! Something Went Wrong\u001b[0m\n              \u001b[36m&lt;/h1&gt;\u001b[39m\n              \u001b[36m&lt;p\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;products-failure-description\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mWe are having some trouble processing your request. Please try again.\u001b[0m\n              \u001b[36m&lt;/p&gt;\u001b[39m\n            \u001b[36m&lt;/div&gt;\u001b[39m\n          \u001b[36m&lt;/div&gt;\u001b[39m\n        \u001b[36m&lt;/div&gt;\u001b[39m\n      \u001b[36m&lt;/div&gt;\u001b[39m\n    \u001b[36m&lt;/body&gt;\u001b[39m\n\n      653 |\n      654 |     expect(\n    &gt; 655 |       await screen.findByRole(&#x27;img&#x27;, {\n          |                    ^\n      656 |         name: /all-products-error/i,\n      657 |         exact: false,\n      658 |       }),\n\n      at waitForWrapper (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/wait-for.js:173:27)\n      at findByRole (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)\n      at Object.&lt;anonymous&gt; (src/__tests__/5Products.js:655:20)\n\n  ● :::RJSCPHEHQV_TEST_SUITE_5:::Products Route tests › :::RJSCPHEHQV_TEST_55:::When a Product card is clicked in Products Route, then the page should be navigated to the Product Item Details route with \&quot;/product-details/:id\&quot; in the URL path:::5:::\n\n    expect(received).toMatch(expected)\n\n    Expected substring: \&quot;products/24\&quot;\n    Received string:    \&quot;/products\&quot;\n\n      711 |     userEvent.click(screen.getByText(productsResponse.products[0].title))\n      712 |\n    &gt; 713 |     expect(window.location.pathname).toMatch(&#x27;products/24&#x27;)\n          |                                      ^\n      714 |     restoreGetCookieFns()\n      715 |   })\n      716 | })\n\n      at Object.&lt;anonymous&gt; (src/__tests__/5Products.js:713:38)\n&quot;
     },
     {
-      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;\n\n    Require stack:\n      src/components/Header/index.js\n      src/components/Home/index.js\n      src/App.js\n      src/__tests__/1ProductDetailsAuth.js\n\n      2 | import Cookies from &#x27;js-cookie&#x27;\n      3 |\n    &gt; 4 | import CartContext from &#x27;../../context/CartContext&#x27;\n        | ^\n      5 |\n      6 | import &#x27;./index.css&#x27;\n      7 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/components/Header/index.js:4:1)\n&quot;,
       &quot;leaks&quot;: false,
       &quot;numFailingTests&quot;: 5,
       &quot;numPassingTests&quot;: 0,
@@ -1916,10 +1878,10 @@
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 0,
-        &quot;runtime&quot;: 0,
-        &quot;slow&quot;: false,
-        &quot;start&quot;: 0
+        &quot;end&quot;: 1731324538526,
+        &quot;runtime&quot;: 5564,
+        &quot;slow&quot;: true,
+        &quot;start&quot;: 1731324532962
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -1931,131 +1893,148 @@
         &quot;unmatched&quot;: 0,
         &quot;updated&quot;: 0
       },
-      &quot;testExecError&quot;: {
-        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
-        &quot;hint&quot;: &quot;&quot;,
-        &quot;requireStack&quot;: [
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Header/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Home/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/App.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/1ProductDetailsAuth.js&quot;
-        ],
-        &quot;siblingWithSimilarExtensionFound&quot;: false,
-        &quot;moduleName&quot;: &quot;../../context/CartContext&quot;,
-        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;&quot;
-      },
-      &quot;testFilePath&quot;: &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/1ProductDetailsAuth.js&quot;,
+      &quot;testFilePath&quot;: &quot;/tmp/RJSCPXK9WC/src/__tests__/1ProductDetailsAuth.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [
             &quot;Product Item Details Authentication and Authorization tests&quot;
           ],
-          &quot;duration&quot;: 0,
+          &quot;duration&quot;: 104,
           &quot;failureDetails&quot;: [
-            &quot;&quot;
+            {
+              &quot;matcherResult&quot;: {
+                &quot;actual&quot;: &quot;/products/not-found&quot;,
+                &quot;expected&quot;: &quot;/login&quot;,
+                &quot;name&quot;: &quot;toBe&quot;,
+                &quot;pass&quot;: false
+              }
+            }
           ],
           &quot;failureMessages&quot;: [
-            &quot;&quot;
+            &quot;Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \&quot;/login\&quot;\nReceived: \&quot;/products/not-found\&quot;\n    at Object.&lt;anonymous&gt; (/tmp/RJSCPXK9WC/src/__tests__/1ProductDetailsAuth.js:236:38)\n    at Promise.then.completed (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:276:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:216:10)\n    at _callCircusTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:212:40)\n    at _runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:149:3)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:63:9)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:57:9)\n    at run (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:25:3)\n    at runAndTransformResultsToJestFormat (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)\n    at jestAdapter (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)\n    at runTestInternal (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:380:16)\n    at runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:472:34)&quot;
           ],
-          &quot;fullName&quot;: &quot;Product Item Details Authentication and Authorization tests When the \&quot;/product-details/:id\&quot; is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt text as \&quot;website login\&quot;&quot;,
+          &quot;fullName&quot;: &quot;Product Item Details Authentication and Authorization testsWhen the \&quot;/product-details/:id\&quot; is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt text as \&quot;website login\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;When the \&quot;/product-details/:id\&quot; is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt text as \&quot;website login\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_1&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_1&quot;,
+          &quot;errorMessages&quot;: [
+            &quot;Expected \&quot;/login\&quot;, but received \&quot;/products/not-found\&quot;&quot;
+          ]
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Product Item Details Authentication and Authorization tests&quot;
           ],
-          &quot;duration&quot;: 0,
+          &quot;duration&quot;: 1011,
           &quot;failureDetails&quot;: [
-            &quot;&quot;
+            {
+              &quot;name&quot;: &quot;TestingLibraryElementError&quot;
+            }
           ],
           &quot;failureMessages&quot;: [
-            &quot;&quot;
+            &quot;Error: Unable to find role=\&quot;img\&quot;\n\n\u001b[36m&lt;body&gt;\u001b[39m\n  \u001b[36m&lt;div /&gt;\u001b[39m\n\u001b[36m&lt;/body&gt;\u001b[39m\n    at waitForWrapper (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/wait-for.js:173:27)\n    at findByRole (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)\n    at Object.&lt;anonymous&gt; (/tmp/RJSCPXK9WC/src/__tests__/1ProductDetailsAuth.js:251:20)\n    at Promise.then.completed (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:276:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:216:10)\n    at _callCircusTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:212:40)\n    at _runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:149:3)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:63:9)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:57:9)\n    at run (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:25:3)\n    at runAndTransformResultsToJestFormat (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)\n    at jestAdapter (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)\n    at runTestInternal (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:380:16)\n    at runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:472:34)&quot;
           ],
-          &quot;fullName&quot;: &quot;Product Item Details Authentication and Authorization tests When the HTTP GET request made in the Product Item Details Route gets the response status as 404, then an HTML image element with alt as \&quot;error view\&quot; and src as the URL for the error view image should be displayed&quot;,
+          &quot;fullName&quot;: &quot;Product Item Details Authentication and Authorization testsWhen the HTTP GET request made in the Product Item Details Route gets the response status as 404, then an HTML image element with alt as \&quot;error view\&quot; and src as the URL for the error view image should be displayed&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;When the HTTP GET request made in the Product Item Details Route gets the response status as 404, then an HTML image element with alt as \&quot;error view\&quot; and src as the URL for the error view image should be displayed&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_2&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_2&quot;,
+          &quot;errorMessages&quot;: [
+            &quot;Error: Unable to find role=\&quot;img\&quot;&quot;
+          ]
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Product Item Details Authentication and Authorization tests&quot;
           ],
-          &quot;duration&quot;: 0,
+          &quot;duration&quot;: 1007,
           &quot;failureDetails&quot;: [
-            &quot;&quot;
+            {
+              &quot;name&quot;: &quot;TestingLibraryElementError&quot;
+            }
           ],
           &quot;failureMessages&quot;: [
-            &quot;&quot;
+            &quot;Error: Unable to find role=\&quot;heading\&quot;\n\n\u001b[36m&lt;body&gt;\u001b[39m\n  \u001b[36m&lt;div /&gt;\u001b[39m\n\u001b[36m&lt;/body&gt;\u001b[39m\n    at waitForWrapper (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/wait-for.js:173:27)\n    at findByRole (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)\n    at Object.&lt;anonymous&gt; (/tmp/RJSCPXK9WC/src/__tests__/1ProductDetailsAuth.js:266:20)\n    at Promise.then.completed (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:276:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:216:10)\n    at _callCircusTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:212:40)\n    at _runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:149:3)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:63:9)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:57:9)\n    at run (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:25:3)\n    at runAndTransformResultsToJestFormat (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)\n    at jestAdapter (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)\n    at runTestInternal (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:380:16)\n    at runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:472:34)&quot;
           ],
-          &quot;fullName&quot;: &quot;Product Item Details Authentication and Authorization tests When the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML main heading element with text content as \&quot;Product Not Found\&quot; should be displayed&quot;,
+          &quot;fullName&quot;: &quot;Product Item Details Authentication and Authorization testsWhen the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML main heading element with text content as \&quot;Product Not Found\&quot; should be displayed&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;When the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML main heading element with text content as \&quot;Product Not Found\&quot; should be displayed&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_3&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_3&quot;,
+          &quot;errorMessages&quot;: [
+            &quot;Error: Unable to find role=\&quot;heading\&quot;&quot;
+          ]
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Product Item Details Authentication and Authorization tests&quot;
           ],
-          &quot;duration&quot;: 0,
+          &quot;duration&quot;: 1009,
           &quot;failureDetails&quot;: [
-            &quot;&quot;
+            {
+              &quot;name&quot;: &quot;TestingLibraryElementError&quot;
+            }
           ],
           &quot;failureMessages&quot;: [
-            &quot;&quot;
+            &quot;Error: Unable to find role=\&quot;button\&quot;\n\n\u001b[36m&lt;body&gt;\u001b[39m\n  \u001b[36m&lt;div /&gt;\u001b[39m\n\u001b[36m&lt;/body&gt;\u001b[39m\n    at waitForWrapper (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/wait-for.js:173:27)\n    at findByRole (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)\n    at Object.&lt;anonymous&gt; (/tmp/RJSCPXK9WC/src/__tests__/1ProductDetailsAuth.js:279:20)\n    at Promise.then.completed (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:276:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:216:10)\n    at _callCircusTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:212:40)\n    at _runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:149:3)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:63:9)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:57:9)\n    at run (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:25:3)\n    at runAndTransformResultsToJestFormat (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)\n    at jestAdapter (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)\n    at runTestInternal (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:380:16)\n    at runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:472:34)&quot;
           ],
-          &quot;fullName&quot;: &quot;Product Item Details Authentication and Authorization tests When the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML button element with text content as \&quot;Continue Shopping\&quot; should be displayed&quot;,
+          &quot;fullName&quot;: &quot;Product Item Details Authentication and Authorization testsWhen the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML button element with text content as \&quot;Continue Shopping\&quot; should be displayed&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;When the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML button element with text content as \&quot;Continue Shopping\&quot; should be displayed&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_4&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_4&quot;,
+          &quot;errorMessages&quot;: [
+            &quot;Error: Unable to find role=\&quot;button\&quot;&quot;
+          ]
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Product Item Details Authentication and Authorization tests&quot;
           ],
-          &quot;duration&quot;: 0,
+          &quot;duration&quot;: 1007,
           &quot;failureDetails&quot;: [
-            &quot;&quot;
+            {
+              &quot;name&quot;: &quot;TestingLibraryElementError&quot;
+            }
           ],
           &quot;failureMessages&quot;: [
-            &quot;&quot;
+            &quot;Error: Unable to find role=\&quot;button\&quot;\n\n\u001b[36m&lt;body&gt;\u001b[39m\n  \u001b[36m&lt;div /&gt;\u001b[39m\n\u001b[36m&lt;/body&gt;\u001b[39m\n    at waitForWrapper (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/wait-for.js:173:27)\n    at findByRole (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)\n    at Object.&lt;anonymous&gt; (/tmp/RJSCPXK9WC/src/__tests__/1ProductDetailsAuth.js:292:20)\n    at Promise.then.completed (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:276:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/utils.js:216:10)\n    at _callCircusTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:212:40)\n    at _runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:149:3)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:63:9)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:57:9)\n    at run (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:25:3)\n    at runAndTransformResultsToJestFormat (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)\n    at jestAdapter (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)\n    at runTestInternal (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:380:16)\n    at runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:472:34)&quot;
           ],
-          &quot;fullName&quot;: &quot;Product Item Details Authentication and Authorization tests When the HTTP GET request made in Product Item Details Route gets the response status as 404, and \&quot;Continue Shopping\&quot; button is clicked, then the page should be navigated to ProductsRoute&quot;,
+          &quot;fullName&quot;: &quot;Product Item Details Authentication and Authorization testsWhen the HTTP GET request made in Product Item Details Route gets the response status as 404, and \&quot;Continue Shopping\&quot; button is clicked, then the page should be navigated to ProductsRoute&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;When the HTTP GET request made in Product Item Details Route gets the response status as 404, and \&quot;Continue Shopping\&quot; button is clicked, then the page should be navigated to ProductsRoute&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_5&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_5&quot;,
+          &quot;errorMessages&quot;: [
+            &quot;Error: Unable to find role=\&quot;button\&quot;&quot;
+          ]
         }
-      ]
+      ],
+      &quot;failureMessage&quot;: &quot;  ● :::RJSCPHEHQV_TEST_SUITE_1:::Product Item Details Authentication and Authorization tests › :::RJSCPHEHQV_TEST_1:::When the \&quot;/product-details/:id\&quot; is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt text as \&quot;website login\&quot;:::5:::\n\n    expect(received).toBe(expected) // Object.is equality\n\n    Expected: \&quot;/login\&quot;\n    Received: \&quot;/products/not-found\&quot;\n\n      234 |     mockGetCookie(false)\n      235 |     renderWithBrowserRouter(&lt;App /&gt;, {route: productDetailsPath1})\n    &gt; 236 |     expect(window.location.pathname).toBe(loginRoutePath)\n          |                                      ^\n      237 |     const loginImgs = screen.getAllByRole(&#x27;img&#x27;, {\n      238 |       name: /website login/i,\n      239 |       exact: false,\n\n      at Object.&lt;anonymous&gt; (src/__tests__/1ProductDetailsAuth.js:236:38)\n\n  ● :::RJSCPHEHQV_TEST_SUITE_1:::Product Item Details Authentication and Authorization tests › :::RJSCPHEHQV_TEST_2:::When the HTTP GET request made in the Product Item Details Route gets the response status as 404, then an HTML image element with alt as \&quot;error view\&quot; and src as the URL for the error view image should be displayed:::5:::\n\n    Unable to find role=\&quot;img\&quot;\n\n    \u001b[36m&lt;body&gt;\u001b[39m\n      \u001b[36m&lt;div /&gt;\u001b[39m\n    \u001b[36m&lt;/body&gt;\u001b[39m\n\n      249 |\n      250 |     expect(\n    &gt; 251 |       await screen.findByRole(&#x27;img&#x27;, {name: /error view/i, exact: false}),\n          |                    ^\n      252 |     ).toBeInTheDocument()\n      253 |     expect(\n      254 |       screen.getByRole(&#x27;img&#x27;, {name: /error view/i, exact: false}).src,\n\n      at waitForWrapper (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/wait-for.js:173:27)\n      at findByRole (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)\n      at Object.&lt;anonymous&gt; (src/__tests__/1ProductDetailsAuth.js:251:20)\n\n  ● :::RJSCPHEHQV_TEST_SUITE_1:::Product Item Details Authentication and Authorization tests › :::RJSCPHEHQV_TEST_3:::When the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML main heading element with text content as \&quot;Product Not Found\&quot; should be displayed:::5:::\n\n    Unable to find role=\&quot;heading\&quot;\n\n    \u001b[36m&lt;body&gt;\u001b[39m\n      \u001b[36m&lt;div /&gt;\u001b[39m\n    \u001b[36m&lt;/body&gt;\u001b[39m\n\n      264 |\n      265 |     expect(\n    &gt; 266 |       await screen.findByRole(&#x27;heading&#x27;, {\n          |                    ^\n      267 |         name: /Product Not Found/i,\n      268 |         exact: false,\n      269 |       }),\n\n      at waitForWrapper (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/wait-for.js:173:27)\n      at findByRole (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)\n      at Object.&lt;anonymous&gt; (src/__tests__/1ProductDetailsAuth.js:266:20)\n\n  ● :::RJSCPHEHQV_TEST_SUITE_1:::Product Item Details Authentication and Authorization tests › :::RJSCPHEHQV_TEST_4:::When the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML button element with text content as \&quot;Continue Shopping\&quot; should be displayed:::5:::\n\n    Unable to find role=\&quot;button\&quot;\n\n    \u001b[36m&lt;body&gt;\u001b[39m\n      \u001b[36m&lt;div /&gt;\u001b[39m\n    \u001b[36m&lt;/body&gt;\u001b[39m\n\n      277 |\n      278 |     expect(\n    &gt; 279 |       await screen.findByRole(&#x27;button&#x27;, {\n          |                    ^\n      280 |         name: /Continue Shopping/i,\n      281 |         exact: false,\n      282 |       }),\n\n      at waitForWrapper (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/wait-for.js:173:27)\n      at findByRole (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)\n      at Object.&lt;anonymous&gt; (src/__tests__/1ProductDetailsAuth.js:279:20)\n\n  ● :::RJSCPHEHQV_TEST_SUITE_1:::Product Item Details Authentication and Authorization tests › :::RJSCPHEHQV_TEST_5:::When the HTTP GET request made in Product Item Details Route gets the response status as 404, and \&quot;Continue Shopping\&quot; button is clicked, then the page should be navigated to ProductsRoute:::5:::\n\n    Unable to find role=\&quot;button\&quot;\n\n    \u001b[36m&lt;body&gt;\u001b[39m\n      \u001b[36m&lt;div /&gt;\u001b[39m\n    \u001b[36m&lt;/body&gt;\u001b[39m\n\n      290 |\n      291 |     expect(\n    &gt; 292 |       await screen.findByRole(&#x27;button&#x27;, {\n          |                    ^\n      293 |         name: /Continue Shopping/i,\n      294 |         exact: false,\n      295 |       }),\n\n      at waitForWrapper (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/wait-for.js:173:27)\n      at findByRole (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:101:33)\n      at Object.&lt;anonymous&gt; (src/__tests__/1ProductDetailsAuth.js:292:20)\n&quot;
     },
     {
-      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;\n\n    Require stack:\n      src/components/Header/index.js\n      src/components/Home/index.js\n      src/App.js\n      src/__tests__/4Home.js\n\n      2 | import Cookies from &#x27;js-cookie&#x27;\n      3 |\n    &gt; 4 | import CartContext from &#x27;../../context/CartContext&#x27;\n        | ^\n      5 |\n      6 | import &#x27;./index.css&#x27;\n      7 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/components/Header/index.js:4:1)\n&quot;,
       &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 7,
-      &quot;numPassingTests&quot;: 0,
+      &quot;numFailingTests&quot;: 1,
+      &quot;numPassingTests&quot;: 6,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 0,
-        &quot;runtime&quot;: 0,
+        &quot;end&quot;: 1731324541852,
+        &quot;runtime&quot;: 3314,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 0
+        &quot;start&quot;: 1731324538538
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -2067,169 +2046,143 @@
         &quot;unmatched&quot;: 0,
         &quot;updated&quot;: 0
       },
-      &quot;testExecError&quot;: {
-        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
-        &quot;hint&quot;: &quot;&quot;,
-        &quot;requireStack&quot;: [
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Header/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Home/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/App.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/4Home.js&quot;
-        ],
-        &quot;siblingWithSimilarExtensionFound&quot;: false,
-        &quot;moduleName&quot;: &quot;../../context/CartContext&quot;,
-        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;&quot;
-      },
-      &quot;testFilePath&quot;: &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/4Home.js&quot;,
+      &quot;testFilePath&quot;: &quot;/tmp/RJSCPXK9WC/src/__tests__/4Home.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [
             &quot;Home Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Home Route tests When the \&quot;/\&quot; is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consist is an HTML input element with label text as \&quot;USERNAME\&quot;&quot;,
+          &quot;duration&quot;: 90,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Home Route testsWhen the \&quot;/\&quot; is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consist is an HTML input element with label text as \&quot;USERNAME\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When the \&quot;/\&quot; is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consist is an HTML input element with label text as \&quot;USERNAME\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_34&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_34&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Home Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Home Route tests When the \&quot;/\&quot; is provided in the URL by an authenticated user then the page should be navigated to HomeRoute and consist of an HTML image element with the given home image URL as src and alt as \&quot;clothes that get you noticed\&quot;&quot;,
+          &quot;duration&quot;: 220,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Home Route testsWhen the \&quot;/\&quot; is provided in the URL by an authenticated user then the page should be navigated to HomeRoute and consist of an HTML image element with the given home image URL as src and alt as \&quot;clothes that get you noticed\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When the \&quot;/\&quot; is provided in the URL by an authenticated user then the page should be navigated to HomeRoute and consist of an HTML image element with the given home image URL as src and alt as \&quot;clothes that get you noticed\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_35&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_35&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Home Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Home Route tests When the Products link is clicked then the page should be navigated to ProductsRoute and consist of an HTML main heading element with text content as \&quot;Category\&quot;&quot;,
+          &quot;duration&quot;: 371,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Home Route testsWhen the Products link is clicked then the page should be navigated to ProductsRoute and consist of an HTML main heading element with text content as \&quot;Category\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When the Products link is clicked then the page should be navigated to ProductsRoute and consist of an HTML main heading element with text content as \&quot;Category\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_36&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_36&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Home Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
+          &quot;duration&quot;: 1021,
           &quot;failureDetails&quot;: [
-            &quot;&quot;
+            {
+              &quot;name&quot;: &quot;TestingLibraryElementError&quot;
+            }
           ],
           &quot;failureMessages&quot;: [
-            &quot;&quot;
+            &quot;TestingLibraryElementError: Unable to find an accessible element with the role \&quot;img\&quot; and name \&quot;cart empty\&quot;\n\nHere are the accessible roles:\n\n  navigation:\n\n  Name \&quot;\&quot;:\n  \u001b[36m&lt;nav\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-header\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  --------------------------------------------------\n  link:\n\n  Name \&quot;website logo\&quot;:\n  \u001b[36m&lt;a\u001b[39m\n    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;website logo\&quot;:\n  \u001b[36m&lt;a\u001b[39m\n    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;Home\&quot;:\n  \u001b[36m&lt;a\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;Products\&quot;:\n  \u001b[36m&lt;a\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;Cart\&quot;:\n  \u001b[36m&lt;a\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;nav home\&quot;:\n  \u001b[36m&lt;a\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;nav products\&quot;:\n  \u001b[36m&lt;a\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;nav cart\&quot;:\n  \u001b[36m&lt;a\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  --------------------------------------------------\n  img:\n\n  Name \&quot;website logo\&quot;:\n  \u001b[36m&lt;img\u001b[39m\n    \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;nav logout\&quot;:\n  \u001b[36m&lt;img\u001b[39m\n    \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav logout\&quot;\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;website logo\&quot;:\n  \u001b[36m&lt;img\u001b[39m\n    \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;nav home\&quot;:\n  \u001b[36m&lt;img\u001b[39m\n    \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav home\&quot;\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;nav products\&quot;:\n  \u001b[36m&lt;img\u001b[39m\n    \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav products\&quot;\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;nav cart\&quot;:\n  \u001b[36m&lt;img\u001b[39m\n    \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav cart\&quot;\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;cart\&quot;:\n  \u001b[36m&lt;img\u001b[39m\n    \u001b[33malt\u001b[39m=\u001b[32m\&quot;cart\&quot;\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;cart-img\&quot;\u001b[39m\n    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-img.png\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  --------------------------------------------------\n  button:\n\n  Name \&quot;nav logout\&quot;:\n  \u001b[36m&lt;button\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-mobile-btn\&quot;\u001b[39m\n    \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;Logout\&quot;:\n  \u001b[36m&lt;button\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;logout-desktop-btn\&quot;\u001b[39m\n    \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  --------------------------------------------------\n  list:\n\n  Name \&quot;\&quot;:\n  \u001b[36m&lt;ul\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;\&quot;:\n  \u001b[36m&lt;ul\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-list-mobile\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  --------------------------------------------------\n  listitem:\n\n  Name \&quot;\&quot;:\n  \u001b[36m&lt;li\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;\&quot;:\n  \u001b[36m&lt;li\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;\&quot;:\n  \u001b[36m&lt;li\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;\&quot;:\n  \u001b[36m&lt;li\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;\&quot;:\n  \u001b[36m&lt;li\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  Name \&quot;\&quot;:\n  \u001b[36m&lt;li\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n  \u001b[36m/&gt;\u001b[39m\n\n  --------------------------------------------------\n\n\u001b[36m&lt;body&gt;\u001b[39m\n  \u001b[36m&lt;div&gt;\u001b[39m\n    \u001b[36m&lt;nav\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-header\&quot;\u001b[39m\n    \u001b[36m&gt;\u001b[39m\n      \u001b[36m&lt;div\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-content\&quot;\u001b[39m\n      \u001b[36m&gt;\u001b[39m\n        \u001b[36m&lt;div\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-mobile-logo-container\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;a\u001b[39m\n            \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;img\u001b[39m\n              \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n              \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n            \u001b[36m/&gt;\u001b[39m\n          \u001b[36m&lt;/a&gt;\u001b[39m\n          \u001b[36m&lt;button\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-mobile-btn\&quot;\u001b[39m\n            \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;img\u001b[39m\n              \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav logout\&quot;\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n              \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png\&quot;\u001b[39m\n            \u001b[36m/&gt;\u001b[39m\n          \u001b[36m&lt;/button&gt;\u001b[39m\n        \u001b[36m&lt;/div&gt;\u001b[39m\n        \u001b[36m&lt;div\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-large-container\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;a\u001b[39m\n            \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;img\u001b[39m\n              \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n              \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n            \u001b[36m/&gt;\u001b[39m\n          \u001b[36m&lt;/a&gt;\u001b[39m\n          \u001b[36m&lt;ul\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;a\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mHome\u001b[0m\n              \u001b[36m&lt;/a&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;a\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mProducts\u001b[0m\n              \u001b[36m&lt;/a&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;li\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;a\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mCart\u001b[0m\n              \u001b[36m&lt;/a&gt;\u001b[39m\n            \u001b[36m&lt;/li&gt;\u001b[39m\n          \u001b[36m&lt;/ul&gt;\u001b[39m\n          \u001b[36m&lt;button\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;logout-desktop-btn\&quot;\u001b[39m\n            \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[0mLogout\u001b[0m\n          \u001b[36m&lt;/button&gt;\u001b[39m\n        \u001b[36m&lt;/div&gt;\u001b[39m\n      \u001b[36m&lt;/div&gt;\u001b[39m\n      \u001b[36m&lt;div\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-mobile\&quot;\u001b[39m\n      \u001b[36m&gt;\u001b[39m\n        \u001b[36m&lt;ul\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-list-mobile\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;li\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;a\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n              \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;img\u001b[39m\n                \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav home\&quot;\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;/a&gt;\u001b[39m\n          \u001b[36m&lt;/li&gt;\u001b[39m\n          \u001b[36m&lt;li\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;a\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n              \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;img\u001b[39m\n                \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav products\&quot;\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;/a&gt;\u001b[39m\n          \u001b[36m&lt;/li&gt;\u001b[39m\n          \u001b[36m&lt;li\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;a\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n              \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;img\u001b[39m\n                \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav cart\&quot;\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png\&quot;\u001b[39m\n              \u001b[36m/&gt;\u001b[39m\n            \u001b[36m&lt;/a&gt;\u001b[39m\n          \u001b[36m&lt;/li&gt;\u001b[39m\n        \u001b[36m&lt;/ul&gt;\u001b[39m\n      \u001b[36m&lt;/div&gt;\u001b[39m\n    \u001b[36m&lt;/nav&gt;\u001b[39m\n    \u001b[36m&lt;div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\&quot;cart-container\&quot;\u001b[39m\n    \u001b[36m&gt;\u001b[39m\n      \u001b[36m&lt;img\u001b[39m\n        \u001b[33malt\u001b[39m=\u001b[32m\&quot;cart\&quot;\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;cart-img\&quot;\u001b[39m\n        \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-img.png\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n    \u001b[36m&lt;/div&gt;\u001b[39m\n  \u001b[36m&lt;/div&gt;\u001b[39m\n\u001b[36m&lt;/body&gt;\u001b[39m\n    at Object.getElementError (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/config.js:37:19)\n    at /tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:90:38\n    at getAllByRole (/tmp/RJSCPXK9WC/node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:130:15)\n    at Object.&lt;anonymous&gt; (/tmp/RJSCPXK9WC/src/__tests__/4Home.js:114:29)\n    at _callCircusTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:212:5)\n    at _runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:149:3)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:63:9)\n    at _runTestsForDescribeBlock (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:57:9)\n    at run (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/run.js:25:3)\n    at runAndTransformResultsToJestFormat (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)\n    at jestAdapter (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-circus@26.6.0/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)\n    at runTestInternal (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:380:16)\n    at runTest (/tmp/RJSCPXK9WC/node_modules/.pnpm/jest-runner@26.6.3/node_modules/jest-runner/build/runTest.js:472:34)&quot;
           ],
-          &quot;fullName&quot;: &quot;Home Route tests When the Cart link is clicked then the page should be navigated to CartRoute and consist of an HTML image element with the given image URL as src and alt as \&quot;cart\&quot;&quot;,
+          &quot;fullName&quot;: &quot;Home Route testsWhen the Cart link is clicked then the page should be navigated to CartRoute and consist of an HTML image element with the given image URL as src and alt as \&quot;cart\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;When the Cart link is clicked then the page should be navigated to CartRoute and consist of an HTML image element with the given image URL as src and alt as \&quot;cart\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_37&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_37&quot;,
+          &quot;errorMessages&quot;: [
+            &quot;TestingLibraryElementError: Unable to find an accessible element with the role \&quot;img\&quot; and name \&quot;cart empty\&quot;&quot;
+          ]
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Home Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Home Route tests When the logout button is clicked then the Cookies.remove() method should be called with the argument as \&quot;jwt_token\&quot;&quot;,
+          &quot;duration&quot;: 179,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Home Route testsWhen the logout button is clicked then the Cookies.remove() method should be called with the argument as \&quot;jwt_token\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When the logout button is clicked then the Cookies.remove() method should be called with the argument as \&quot;jwt_token\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_38&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_38&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Home Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Home Route tests When the logout button is clicked then the history.replace() method should be called with the argument \&quot;/login\&quot;&quot;,
+          &quot;duration&quot;: 111,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Home Route testsWhen the logout button is clicked then the history.replace() method should be called with the argument \&quot;/login\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When the logout button is clicked then the history.replace() method should be called with the argument \&quot;/login\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_39&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_39&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Home Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Home Route tests When the logout button is clicked then the page should be navigated to LoginRoute and consist of an HTML button element with \&quot;Login\&quot; as text content&quot;,
+          &quot;duration&quot;: 171,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Home Route testsWhen the logout button is clicked then the page should be navigated to LoginRoute and consist of an HTML button element with \&quot;Login\&quot; as text content&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When the logout button is clicked then the page should be navigated to LoginRoute and consist of an HTML button element with \&quot;Login\&quot; as text content&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_40&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_40&quot;,
+          &quot;errorMessages&quot;: []
         }
-      ]
+      ],
+      &quot;failureMessage&quot;: &quot;  ● :::RJSCPHEHQV_TEST_SUITE_4:::Home Route tests › :::RJSCPHEHQV_TEST_37:::When the Cart link is clicked then the page should be navigated to CartRoute and consist of an HTML image element with the given image URL as src and alt as \&quot;cart\&quot;:::5:::\n\n    TestingLibraryElementError: Unable to find an accessible element with the role \&quot;img\&quot; and name \&quot;cart empty\&quot;\n\n    Here are the accessible roles:\n\n      navigation:\n\n      Name \&quot;\&quot;:\n      \u001b[36m&lt;nav\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-header\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      --------------------------------------------------\n      link:\n\n      Name \&quot;website logo\&quot;:\n      \u001b[36m&lt;a\u001b[39m\n        \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;website logo\&quot;:\n      \u001b[36m&lt;a\u001b[39m\n        \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;Home\&quot;:\n      \u001b[36m&lt;a\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n        \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;Products\&quot;:\n      \u001b[36m&lt;a\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n        \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;Cart\&quot;:\n      \u001b[36m&lt;a\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n        \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;nav home\&quot;:\n      \u001b[36m&lt;a\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n        \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;nav products\&quot;:\n      \u001b[36m&lt;a\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n        \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;nav cart\&quot;:\n      \u001b[36m&lt;a\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n        \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      --------------------------------------------------\n      img:\n\n      Name \&quot;website logo\&quot;:\n      \u001b[36m&lt;img\u001b[39m\n        \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n        \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;nav logout\&quot;:\n      \u001b[36m&lt;img\u001b[39m\n        \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav logout\&quot;\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n        \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;website logo\&quot;:\n      \u001b[36m&lt;img\u001b[39m\n        \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n        \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;nav home\&quot;:\n      \u001b[36m&lt;img\u001b[39m\n        \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav home\&quot;\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n        \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;nav products\&quot;:\n      \u001b[36m&lt;img\u001b[39m\n        \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav products\&quot;\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n        \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;nav cart\&quot;:\n      \u001b[36m&lt;img\u001b[39m\n        \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav cart\&quot;\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n        \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;cart\&quot;:\n      \u001b[36m&lt;img\u001b[39m\n        \u001b[33malt\u001b[39m=\u001b[32m\&quot;cart\&quot;\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;cart-img\&quot;\u001b[39m\n        \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-img.png\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      --------------------------------------------------\n      button:\n\n      Name \&quot;nav logout\&quot;:\n      \u001b[36m&lt;button\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-mobile-btn\&quot;\u001b[39m\n        \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;Logout\&quot;:\n      \u001b[36m&lt;button\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;logout-desktop-btn\&quot;\u001b[39m\n        \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      --------------------------------------------------\n      list:\n\n      Name \&quot;\&quot;:\n      \u001b[36m&lt;ul\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;\&quot;:\n      \u001b[36m&lt;ul\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-list-mobile\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      --------------------------------------------------\n      listitem:\n\n      Name \&quot;\&quot;:\n      \u001b[36m&lt;li\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;\&quot;:\n      \u001b[36m&lt;li\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;\&quot;:\n      \u001b[36m&lt;li\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;\&quot;:\n      \u001b[36m&lt;li\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;\&quot;:\n      \u001b[36m&lt;li\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      Name \&quot;\&quot;:\n      \u001b[36m&lt;li\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n      \u001b[36m/&gt;\u001b[39m\n\n      --------------------------------------------------\n\n    \u001b[36m&lt;body&gt;\u001b[39m\n      \u001b[36m&lt;div&gt;\u001b[39m\n        \u001b[36m&lt;nav\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-header\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-content\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-mobile-logo-container\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;a\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;img\u001b[39m\n                  \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n                  \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;/a&gt;\u001b[39m\n              \u001b[36m&lt;button\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-mobile-btn\&quot;\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;img\u001b[39m\n                  \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav logout\&quot;\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                  \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;/button&gt;\u001b[39m\n            \u001b[36m&lt;/div&gt;\u001b[39m\n            \u001b[36m&lt;div\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-large-container\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;a\u001b[39m\n                \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;img\u001b[39m\n                  \u001b[33malt\u001b[39m=\u001b[32m\&quot;website logo\&quot;\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;website-logo\&quot;\u001b[39m\n                  \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png\&quot;\u001b[39m\n                \u001b[36m/&gt;\u001b[39m\n              \u001b[36m&lt;/a&gt;\u001b[39m\n              \u001b[36m&lt;ul\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;a\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mHome\u001b[0m\n                  \u001b[36m&lt;/a&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;a\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mProducts\u001b[0m\n                  \u001b[36m&lt;/a&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n                \u001b[36m&lt;li\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;a\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                    \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n                  \u001b[36m&gt;\u001b[39m\n                    \u001b[0mCart\u001b[0m\n                  \u001b[36m&lt;/a&gt;\u001b[39m\n                \u001b[36m&lt;/li&gt;\u001b[39m\n              \u001b[36m&lt;/ul&gt;\u001b[39m\n              \u001b[36m&lt;button\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;logout-desktop-btn\&quot;\u001b[39m\n                \u001b[33mtype\u001b[39m=\u001b[32m\&quot;button\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[0mLogout\u001b[0m\n              \u001b[36m&lt;/button&gt;\u001b[39m\n            \u001b[36m&lt;/div&gt;\u001b[39m\n          \u001b[36m&lt;/div&gt;\u001b[39m\n          \u001b[36m&lt;div\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-mobile\&quot;\u001b[39m\n          \u001b[36m&gt;\u001b[39m\n            \u001b[36m&lt;ul\u001b[39m\n              \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-list-mobile\&quot;\u001b[39m\n            \u001b[36m&gt;\u001b[39m\n              \u001b[36m&lt;li\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;a\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                  \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;img\u001b[39m\n                    \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav home\&quot;\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;/a&gt;\u001b[39m\n              \u001b[36m&lt;/li&gt;\u001b[39m\n              \u001b[36m&lt;li\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;a\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                  \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/products\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;img\u001b[39m\n                    \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav products\&quot;\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;/a&gt;\u001b[39m\n              \u001b[36m&lt;/li&gt;\u001b[39m\n              \u001b[36m&lt;li\u001b[39m\n                \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-menu-item-mobile\&quot;\u001b[39m\n              \u001b[36m&gt;\u001b[39m\n                \u001b[36m&lt;a\u001b[39m\n                  \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-link\&quot;\u001b[39m\n                  \u001b[33mhref\u001b[39m=\u001b[32m\&quot;/cart\&quot;\u001b[39m\n                \u001b[36m&gt;\u001b[39m\n                  \u001b[36m&lt;img\u001b[39m\n                    \u001b[33malt\u001b[39m=\u001b[32m\&quot;nav cart\&quot;\u001b[39m\n                    \u001b[33mclass\u001b[39m=\u001b[32m\&quot;nav-bar-img\&quot;\u001b[39m\n                    \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png\&quot;\u001b[39m\n                  \u001b[36m/&gt;\u001b[39m\n                \u001b[36m&lt;/a&gt;\u001b[39m\n              \u001b[36m&lt;/li&gt;\u001b[39m\n            \u001b[36m&lt;/ul&gt;\u001b[39m\n          \u001b[36m&lt;/div&gt;\u001b[39m\n        \u001b[36m&lt;/nav&gt;\u001b[39m\n        \u001b[36m&lt;div\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\&quot;cart-container\&quot;\u001b[39m\n        \u001b[36m&gt;\u001b[39m\n          \u001b[36m&lt;img\u001b[39m\n            \u001b[33malt\u001b[39m=\u001b[32m\&quot;cart\&quot;\u001b[39m\n            \u001b[33mclass\u001b[39m=\u001b[32m\&quot;cart-img\&quot;\u001b[39m\n            \u001b[33msrc\u001b[39m=\u001b[32m\&quot;https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-img.png\&quot;\u001b[39m\n          \u001b[36m/&gt;\u001b[39m\n        \u001b[36m&lt;/div&gt;\u001b[39m\n      \u001b[36m&lt;/div&gt;\u001b[39m\n    \u001b[36m&lt;/body&gt;\u001b[39m\n\n      112 |     userEvent.click(cartBtns[0])\n      113 |     await waitFor(() =&gt; expect(window.location.pathname).toBe(&#x27;/cart&#x27;))\n    &gt; 114 |     const cartImgs = screen.getAllByRole(&#x27;img&#x27;, {\n          |                             ^\n      115 |       name: &#x27;cart empty&#x27;,\n      116 |       exact: false,\n      117 |     })\n\n      at Object.getElementError (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/config.js:37:19)\n      at node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:90:38\n      at getAllByRole (node_modules/.pnpm/@testing-library/dom@7.31.2/node_modules/@testing-library/dom/dist/query-helpers.js:130:15)\n      at Object.&lt;anonymous&gt; (src/__tests__/4Home.js:114:29)\n&quot;
     },
     {
-      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;\n\n    Require stack:\n      src/components/Header/index.js\n      src/components/Home/index.js\n      src/App.js\n      src/__tests__/3Login.js\n\n      2 | import Cookies from &#x27;js-cookie&#x27;\n      3 |\n    &gt; 4 | import CartContext from &#x27;../../context/CartContext&#x27;\n        | ^\n      5 |\n      6 | import &#x27;./index.css&#x27;\n      7 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/components/Header/index.js:4:1)\n&quot;,
       &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 2,
-      &quot;numPassingTests&quot;: 0,
+      &quot;numFailingTests&quot;: 0,
+      &quot;numPassingTests&quot;: 2,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 0,
-        &quot;runtime&quot;: 0,
+        &quot;end&quot;: 1731324543874,
+        &quot;runtime&quot;: 2008,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 0
+        &quot;start&quot;: 1731324541866
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -2241,74 +2194,55 @@
         &quot;unmatched&quot;: 0,
         &quot;updated&quot;: 0
       },
-      &quot;testExecError&quot;: {
-        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
-        &quot;hint&quot;: &quot;&quot;,
-        &quot;requireStack&quot;: [
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Header/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Home/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/App.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/3Login.js&quot;
-        ],
-        &quot;siblingWithSimilarExtensionFound&quot;: false,
-        &quot;moduleName&quot;: &quot;../../context/CartContext&quot;,
-        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;&quot;
-      },
-      &quot;testFilePath&quot;: &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/3Login.js&quot;,
+      &quot;testFilePath&quot;: &quot;/tmp/RJSCPXK9WC/src/__tests__/3Login.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [
             &quot;Login Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Login Route tests When an authenticated user tries to access the LoginRoute then the page should be redirected to HomeRoute and consist of an HTML image element with the given image URL as src and alt as \&quot;clothes that get you noticed\&quot;&quot;,
+          &quot;duration&quot;: 434,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Login Route testsWhen an authenticated user tries to access the LoginRoute then the page should be redirected to HomeRoute and consist of an HTML image element with the given image URL as src and alt as \&quot;clothes that get you noticed\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When an authenticated user tries to access the LoginRoute then the page should be redirected to HomeRoute and consist of an HTML image element with the given image URL as src and alt as \&quot;clothes that get you noticed\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_32&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_32&quot;,
+          &quot;errorMessages&quot;: []
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;Login Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Login Route tests When a valid username and password are provided, the login button is clicked and the user has successfully logged in then the history.replace() method should be called with the argument \&quot;/\&quot;&quot;,
+          &quot;duration&quot;: 373,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Login Route testsWhen a valid username and password are provided, the login button is clicked and the user has successfully logged in then the history.replace() method should be called with the argument \&quot;/\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When a valid username and password are provided, the login button is clicked and the user has successfully logged in then the history.replace() method should be called with the argument \&quot;/\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_33&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_33&quot;,
+          &quot;errorMessages&quot;: []
         }
-      ]
+      ],
+      &quot;failureMessage&quot;: null
     },
     {
-      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;\n\n    Require stack:\n      src/components/Header/index.js\n      src/components/Home/index.js\n      src/App.js\n      src/__tests__/7NotFound.js\n\n      2 | import Cookies from &#x27;js-cookie&#x27;\n      3 |\n    &gt; 4 | import CartContext from &#x27;../../context/CartContext&#x27;\n        | ^\n      5 |\n      6 | import &#x27;./index.css&#x27;\n      7 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/components/Header/index.js:4:1)\n&quot;,
       &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 1,
-      &quot;numPassingTests&quot;: 0,
+      &quot;numFailingTests&quot;: 0,
+      &quot;numPassingTests&quot;: 1,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 0,
-        &quot;runtime&quot;: 0,
+        &quot;end&quot;: 1731324545283,
+        &quot;runtime&quot;: 1297,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 0
+        &quot;start&quot;: 1731324543986
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -2320,41 +2254,26 @@
         &quot;unmatched&quot;: 0,
         &quot;updated&quot;: 0
       },
-      &quot;testExecError&quot;: {
-        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
-        &quot;hint&quot;: &quot;&quot;,
-        &quot;requireStack&quot;: [
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Header/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/components/Home/index.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/App.js&quot;,
-          &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/7NotFound.js&quot;
-        ],
-        &quot;siblingWithSimilarExtensionFound&quot;: false,
-        &quot;moduleName&quot;: &quot;../../context/CartContext&quot;,
-        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../../context/CartContext&#x27; from &#x27;src/components/Header/index.js&#x27;&quot;
-      },
-      &quot;testFilePath&quot;: &quot;/tmp/3a0059c3-9ff4-4d6a-b3ca-37ea5c5bd3bf/src/__tests__/7NotFound.js&quot;,
+      &quot;testFilePath&quot;: &quot;/tmp/RJSCPXK9WC/src/__tests__/7NotFound.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [
             &quot;Not Found Route tests&quot;
           ],
-          &quot;duration&quot;: 0,
-          &quot;failureDetails&quot;: [
-            &quot;&quot;
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;&quot;
-          ],
-          &quot;fullName&quot;: &quot;Not Found Route tests When the \&quot;/bad-path\&quot; is provided in the URL then the page should be navigated to NotFoundRoute and consist of an HTML image element with the given not found image URL as src and alt as \&quot;not found\&quot;&quot;,
+          &quot;duration&quot;: 38,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Not Found Route testsWhen the \&quot;/bad-path\&quot; is provided in the URL then the page should be navigated to NotFoundRoute and consist of an HTML image element with the given not found image URL as src and alt as \&quot;not found\&quot;&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
+          &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;When the \&quot;/bad-path\&quot; is provided in the URL then the page should be navigated to NotFoundRoute and consist of an HTML image element with the given not found image URL as src and alt as \&quot;not found\&quot;&quot;,
-          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_107&quot;
+          &quot;id&quot;: &quot;RJSCPHEHQV_TEST_107&quot;,
+          &quot;errorMessages&quot;: []
         }
-      ]
+      ],
+      &quot;failureMessage&quot;: null
     }
   ],
   &quot;wasInterrupted&quot;: false

@@ -132,7 +132,7 @@ class AllProductsSection extends Component {
     <div className='products-error-view-container'>
       <img
         src='https://assets.ccbp.in/frontend/react-js/nxt-trendz/nxt-trendz-products-error-view.png'
-        alt='all-products-error'
+        alt='products failure'
         className='products-failure-img'
       />
       <h1 className='product-failure-heading-text'>

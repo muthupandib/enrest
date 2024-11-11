@@ -387,153 +387,201 @@
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_41",
-      "evaluation_result": "INCORRECT",
-      "title": "When the \"/products\" is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt as \"website login\""
+      "evaluation_result": "CORRECT",
+      "title": "When the \"/products\" is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt as \"website login\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_42",
-      "evaluation_result": "INCORRECT",
-      "title": "Products Route should consist of HTML input element with type attribute value as \"search\""
+      "evaluation_result": "CORRECT",
+      "title": "Products Route should consist of HTML input element with type attribute value as \"search\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_43",
-      "evaluation_result": "INCORRECT",
-      "title": "Products Route should consist of HTML paragraph elements with text content equal to the \"name\" value of each item in categoryOptions provided"
+      "evaluation_result": "CORRECT",
+      "title": "Products Route should consist of HTML paragraph elements with text content equal to the \"name\" value of each item in categoryOptions provided",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_44",
-      "evaluation_result": "INCORRECT",
-      "title": "Products Route should consist of HTML image elements with alt value equal to \"rating {ratingId}\" and src value equal to \"imageUrl\" value of each item in ratingsList provided"
+      "evaluation_result": "CORRECT",
+      "title": "Products Route should consist of HTML image elements with alt value equal to \"rating {ratingId}\" and src value equal to \"imageUrl\" value of each item in ratingsList provided",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_45",
-      "evaluation_result": "INCORRECT",
-      "title": "Products Route should consist of HTML button element with text content as \"Clear Filters\""
+      "evaluation_result": "CORRECT",
+      "title": "Products Route should consist of HTML button element with text content as \"Clear Filters\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_46",
-      "evaluation_result": "INCORRECT",
-      "title": "When Products Route is opened, an HTTP GET request should be made to productsApiUrl with all the query parameters and their initial values"
+      "evaluation_result": "CORRECT",
+      "title": "When Products Route is opened, an HTTP GET request should be made to productsApiUrl with all the query parameters and their initial values",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_47",
-      "evaluation_result": "INCORRECT",
-      "title": "When the Products Route is opened, then the products received in the HTTP GET request response should be displayed"
+      "evaluation_result": "CORRECT",
+      "title": "When the Products Route is opened, then the products received in the HTTP GET request response should be displayed",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_48",
-      "evaluation_result": "INCORRECT",
-      "title": "When a value is provided in the HTML input element for search and the Enter key is pressed, an HTTP GET request should be made with the value provided in the HTML input element as the value to query parameter \"title_search\""
+      "evaluation_result": "CORRECT",
+      "title": "When a value is provided in the HTML input element for search and the Enter key is pressed, an HTTP GET request should be made with the value provided in the HTML input element as the value to query parameter \"title_search\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_49",
-      "evaluation_result": "INCORRECT",
-      "title": "When a category is clicked, an HTTP GET request should be made with the id of the category as the value to query parameter \"category\""
+      "evaluation_result": "CORRECT",
+      "title": "When a category is clicked, an HTTP GET request should be made with the id of the category as the value to query parameter \"category\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_50",
-      "evaluation_result": "INCORRECT",
-      "title": "When a rating is clicked, an HTTP GET request should be made with the id of the rating as the value to query parameter \"rating\""
+      "evaluation_result": "CORRECT",
+      "title": "When a rating is clicked, an HTTP GET request should be made with the id of the rating as the value to query parameter \"rating\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_51",
-      "evaluation_result": "INCORRECT",
-      "title": "When all the filters in Products Route are applied and the \"Clear Filters\" button is clicked, then an HTTP GET request should be made to productsApiUrl with initial values of the query parameters"
+      "evaluation_result": "CORRECT",
+      "title": "When all the filters in Products Route are applied and the \"Clear Filters\" button is clicked, then an HTTP GET request should be made to productsApiUrl with initial values of the query parameters",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_52",
       "evaluation_result": "INCORRECT",
-      "title": "Each product card should be wrapped with the Link from react-router-dom"
+      "title": "Each product card should be wrapped with the Link from react-router-dom",
+      "errorMessages": [
+        "Expected \"undefined\", but received \"undefined\""
+      ]
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_53",
       "evaluation_result": "INCORRECT",
-      "title": "When the HTTP GET request made is unsuccessful, then failure view should be displayed"
+      "title": "When the HTTP GET request made is unsuccessful, then failure view should be displayed",
+      "errorMessages": [
+        "Error: Unable to find role=\"img\""
+      ]
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_54",
-      "evaluation_result": "INCORRECT",
-      "title": "When the HTTP GET request made to productsApiUrl returns products list as empty, then no products view should be displayed"
+      "evaluation_result": "CORRECT",
+      "title": "When the HTTP GET request made to productsApiUrl returns products list as empty, then no products view should be displayed",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_55",
       "evaluation_result": "INCORRECT",
-      "title": "When a Product card is clicked in Products Route, then the page should be navigated to the Product Item Details route with \"/product-details/:id\" in the URL path"
+      "title": "When a Product card is clicked in Products Route, then the page should be navigated to the Product Item Details route with \"/product-details/:id\" in the URL path",
+      "errorMessages": [
+        "Expected \"undefined\", but received \"undefined\""
+      ]
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_1",
       "evaluation_result": "INCORRECT",
-      "title": "When the \"/product-details/:id\" is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt text as \"website login\""
+      "title": "When the \"/product-details/:id\" is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consists of an HTML image element with the given login image URL as src and alt text as \"website login\"",
+      "errorMessages": [
+        "Expected \"/login\", but received \"/products/not-found\""
+      ]
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_2",
       "evaluation_result": "INCORRECT",
-      "title": "When the HTTP GET request made in the Product Item Details Route gets the response status as 404, then an HTML image element with alt as \"error view\" and src as the URL for the error view image should be displayed"
+      "title": "When the HTTP GET request made in the Product Item Details Route gets the response status as 404, then an HTML image element with alt as \"error view\" and src as the URL for the error view image should be displayed",
+      "errorMessages": [
+        "Error: Unable to find role=\"img\""
+      ]
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_3",
       "evaluation_result": "INCORRECT",
-      "title": "When the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML main heading element with text content as \"Product Not Found\" should be displayed"
+      "title": "When the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML main heading element with text content as \"Product Not Found\" should be displayed",
+      "errorMessages": [
+        "Error: Unable to find role=\"heading\""
+      ]
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_4",
       "evaluation_result": "INCORRECT",
-      "title": "When the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML button element with text content as \"Continue Shopping\" should be displayed"
+      "title": "When the HTTP GET request made in Product Item Details Route gets the response status as 404, then an HTML button element with text content as \"Continue Shopping\" should be displayed",
+      "errorMessages": [
+        "Error: Unable to find role=\"button\""
+      ]
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_5",
       "evaluation_result": "INCORRECT",
-      "title": "When the HTTP GET request made in Product Item Details Route gets the response status as 404, and \"Continue Shopping\" button is clicked, then the page should be navigated to ProductsRoute"
+      "title": "When the HTTP GET request made in Product Item Details Route gets the response status as 404, and \"Continue Shopping\" button is clicked, then the page should be navigated to ProductsRoute",
+      "errorMessages": [
+        "Error: Unable to find role=\"button\""
+      ]
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_34",
-      "evaluation_result": "INCORRECT",
-      "title": "When the \"/\" is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consist is an HTML input element with label text as \"USERNAME\""
+      "evaluation_result": "CORRECT",
+      "title": "When the \"/\" is provided in the URL by an unauthenticated user then the page should be redirected to LoginRoute and consist is an HTML input element with label text as \"USERNAME\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_35",
-      "evaluation_result": "INCORRECT",
-      "title": "When the \"/\" is provided in the URL by an authenticated user then the page should be navigated to HomeRoute and consist of an HTML image element with the given home image URL as src and alt as \"clothes that get you noticed\""
+      "evaluation_result": "CORRECT",
+      "title": "When the \"/\" is provided in the URL by an authenticated user then the page should be navigated to HomeRoute and consist of an HTML image element with the given home image URL as src and alt as \"clothes that get you noticed\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_36",
-      "evaluation_result": "INCORRECT",
-      "title": "When the Products link is clicked then the page should be navigated to ProductsRoute and consist of an HTML main heading element with text content as \"Category\""
+      "evaluation_result": "CORRECT",
+      "title": "When the Products link is clicked then the page should be navigated to ProductsRoute and consist of an HTML main heading element with text content as \"Category\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_37",
       "evaluation_result": "INCORRECT",
-      "title": "When the Cart link is clicked then the page should be navigated to CartRoute and consist of an HTML image element with the given image URL as src and alt as \"cart\""
+      "title": "When the Cart link is clicked then the page should be navigated to CartRoute and consist of an HTML image element with the given image URL as src and alt as \"cart\"",
+      "errorMessages": [
+        "TestingLibraryElementError: Unable to find an accessible element with the role \"img\" and name \"cart empty\""
+      ]
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_38",
-      "evaluation_result": "INCORRECT",
-      "title": "When the logout button is clicked then the Cookies.remove() method should be called with the argument as \"jwt_token\""
+      "evaluation_result": "CORRECT",
+      "title": "When the logout button is clicked then the Cookies.remove() method should be called with the argument as \"jwt_token\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_39",
-      "evaluation_result": "INCORRECT",
-      "title": "When the logout button is clicked then the history.replace() method should be called with the argument \"/login\""
+      "evaluation_result": "CORRECT",
+      "title": "When the logout button is clicked then the history.replace() method should be called with the argument \"/login\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_40",
-      "evaluation_result": "INCORRECT",
-      "title": "When the logout button is clicked then the page should be navigated to LoginRoute and consist of an HTML button element with \"Login\" as text content"
+      "evaluation_result": "CORRECT",
+      "title": "When the logout button is clicked then the page should be navigated to LoginRoute and consist of an HTML button element with \"Login\" as text content",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_32",
-      "evaluation_result": "INCORRECT",
-      "title": "When an authenticated user tries to access the LoginRoute then the page should be redirected to HomeRoute and consist of an HTML image element with the given image URL as src and alt as \"clothes that get you noticed\""
+      "evaluation_result": "CORRECT",
+      "title": "When an authenticated user tries to access the LoginRoute then the page should be redirected to HomeRoute and consist of an HTML image element with the given image URL as src and alt as \"clothes that get you noticed\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_33",
-      "evaluation_result": "INCORRECT",
-      "title": "When a valid username and password are provided, the login button is clicked and the user has successfully logged in then the history.replace() method should be called with the argument \"/\""
+      "evaluation_result": "CORRECT",
+      "title": "When a valid username and password are provided, the login button is clicked and the user has successfully logged in then the history.replace() method should be called with the argument \"/\"",
+      "errorMessages": []
     },
     {
       "test_case_id": "RJSCPHEHQV_TEST_107",
-      "evaluation_result": "INCORRECT",
-      "title": "When the \"/bad-path\" is provided in the URL then the page should be navigated to NotFoundRoute and consist of an HTML image element with the given not found image URL as src and alt as \"not found\""
+      "evaluation_result": "CORRECT",
+      "title": "When the \"/bad-path\" is provided in the URL then the page should be navigated to NotFoundRoute and consist of an HTML image element with the given not found image URL as src and alt as \"not found\"",
+      "errorMessages": []
     }
   ]
 }
